@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zadanie rekrutacyjne z dynamicznymi elementami</title>
+</head>
+<body>
+   <div class="container fade-in-text">
+        <h1>Obszary naszych kompetencji</h1>
+        <p>Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.</p>
+        <div class="center-container">
+            <div id="circle" class="circle"></div>
+        </div>
+   </div>
+
+   <div class="footer-background">
+        <h2>Skontaktuj się z nami</h2>
+        <p>Zadzwoń <a href="tel:535015835">+48 535 015 835</a> lub wypełnij formularz.</p>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="name" name="name" placeholder="Imię i Nazwisko">
+                        </div>
+                        <div class="col">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefon">
+                        </div>
+                        <div class="col">
+                            <input type="email" id="email" name="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="company" name="company" placeholder="Firma">
+                        </div>
+                        <div class="col">
+                            <select id="employees" name="employees">
+                                <option value="" disabled selected>Ilość pracowników</option>
+                                <option value="1-10">1-10</option>
+                                <option value="11-50">11-50</option>
+                                <option value="51-100">51-100</option>
+                                <option value="100+">100+</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select id="income" name="income">
+                                <option value="" disabled selected>Roczny dochód firmy</option>
+                                <option value="< $1M">&lt; $1M</option>
+                                <option value="$1M - $10M">$1M - $10M</option>
+                                <option value="$10M - $100M">$10M - $100M</option>
+                                <option value="> $100M">&gt; $100M</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea id="message" name="message" rows="4" placeholder="Wiadomość"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-rodo">
+                <label>
+                    <input type="checkbox" id="zgoda" name="zgoda"> Zapoznałem(-łam) się z <a href="#">Polityką prywatności</a> oraz z <a href="#">Zastrzeżeniami prawnymi</a>
+                </label>
+            </div>
+            <div id="bounce-button" class="button-container">
+                <button>WYŚLIJ</button>
+            </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
+
